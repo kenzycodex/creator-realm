@@ -62,9 +62,9 @@ const HeroSection = () => {
               <span className="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">
                 Brand Designer
               </span>
-              <span className="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">
+              {/* <span className="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">
                 Graphics Design
-              </span>
+              </span> */}
             </div>
 
             {/* Social Proof - Testimonials */}
