@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 const BestCreatorsSection = () => {
@@ -9,7 +10,7 @@ const BestCreatorsSection = () => {
           {/* Left - Title */}
           <div className="space-y-2">
             <p className="text-sm text-gray-500 font-medium">Top Creators</p>
-            <h2 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-[#1a1a3a] leading-tight">
+            <h2 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-[#2a2a5a] leading-tight">
               Best Creators
               <br />& Clients.
             </h2>
@@ -53,11 +54,11 @@ const BestCreatorsSection = () => {
           </div>
         </div>
 
-        {/* Companies Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-          {/* Scribal Pay Large Card */}
-          <div className="relative bg-[#e8f0ff] rounded-3xl p-8 overflow-hidden min-h-[400px]">
-            {/* Cut-out corner for arrow */}
+        {/* Companies Grid - Three cards side by side on larger screens */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
+          {/* First Card - Scribal Pay Large Card with top-right cut-out */}
+          <div className="relative bg-[#e8f4ff] rounded-3xl p-8 overflow-hidden min-h-[420px]">
+            {/* Cut-out corner for arrow at top-right */}
             <div
               className="absolute top-0 right-0 w-20 h-20 bg-white"
               style={{
@@ -67,9 +68,9 @@ const BestCreatorsSection = () => {
 
             {/* Arrow positioned in cut-out */}
             <div className="absolute top-4 right-4">
-              <div className="w-12 h-12 bg-[#2a2a5a] rounded-2xl flex items-center justify-center shadow-lg">
+              <div className="w-14 h-14 bg-[#2a2a5a] rounded-2xl flex items-center justify-center shadow-lg">
                 <svg
-                  className="w-7 h-7 text-white"
+                  className="w-8 h-8 text-white"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -103,8 +104,8 @@ const BestCreatorsSection = () => {
             </div>
           </div>
 
-          {/* Scribal Pay Small Card */}
-          <div className="relative bg-[#fff5f5] rounded-3xl p-6 overflow-hidden min-h-[280px]">
+          {/* Second Card - Techstar with bottom-right cut-out */}
+          <div className="relative bg-[#fff5f5] rounded-3xl p-6 overflow-hidden min-h-[420px]">
             {/* Cut-out corner at bottom right */}
             <div
               className="absolute bottom-0 right-0 w-16 h-16 bg-white"
@@ -115,9 +116,9 @@ const BestCreatorsSection = () => {
 
             {/* Arrow positioned in bottom cut-out */}
             <div className="absolute bottom-4 right-4">
-              <div className="w-10 h-10 bg-[#ef4444] rounded-xl flex items-center justify-center shadow-md">
+              <div className="w-12 h-12 bg-[#ef4444] rounded-xl flex items-center justify-center shadow-md">
                 <svg
-                  className="w-6 h-6 text-white"
+                  className="w-7 h-7 text-white"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -134,14 +135,14 @@ const BestCreatorsSection = () => {
 
             <div className="pb-6">
               <div className="mb-6">
-                <div className="w-12 h-12 bg-[#1a5cff] rounded-xl flex items-center justify-center shadow-md mb-4">
-                  <svg className="w-6 h-6 text-white" viewBox="0 0 24 24" fill="currentColor">
+                <div className="w-14 h-14 bg-[#1a5cff] rounded-xl flex items-center justify-center shadow-md mb-4">
+                  <svg className="w-7 h-7 text-white" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M12 2l3.09 8.26L23 12l-7.91 1.74L12 22l-3.09-8.26L1 12l7.91-1.74L12 2z" />
                   </svg>
                 </div>
-                <h4 className="text-xs text-red-500 font-medium mb-3">Scribal Pay</h4>
+                <h4 className="text-sm text-red-500 font-medium mb-3">Scribal Pay</h4>
               </div>
-              <h3 className="text-xl font-bold text-[#1a1a3a] mb-3 leading-tight">
+              <h3 className="text-2xl font-bold text-[#1a1a3a] mb-3 leading-tight">
                 Techstar is a Tech Giant
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
@@ -151,9 +152,9 @@ const BestCreatorsSection = () => {
             </div>
           </div>
 
-          {/* Abtan Creation Card */}
-          <div className="relative bg-[#fffbf0] rounded-3xl p-6 overflow-hidden min-h-[320px]">
-            {/* Cut-out corner for arrow */}
+          {/* Third Card - Abtan Creation with top-right cut-out */}
+          <div className="relative bg-[#fffbf0] rounded-3xl p-6 overflow-hidden min-h-[420px]">
+            {/* Cut-out corner for arrow at top-right */}
             <div
               className="absolute top-0 right-0 w-16 h-16 bg-white"
               style={{
@@ -163,9 +164,9 @@ const BestCreatorsSection = () => {
 
             {/* Arrow positioned in cut-out */}
             <div className="absolute top-4 right-4">
-              <div className="w-10 h-10 bg-[#f97316] rounded-xl flex items-center justify-center shadow-md">
+              <div className="w-12 h-12 bg-[#f97316] rounded-xl flex items-center justify-center shadow-md">
                 <svg
-                  className="w-6 h-6 text-white"
+                  className="w-7 h-7 text-white"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -182,15 +183,15 @@ const BestCreatorsSection = () => {
 
             <div className="pr-6">
               <div className="mb-6">
-                <div className="w-12 h-12 bg-[#8b4513] rounded-xl flex items-center justify-center shadow-md mb-4">
-                  <svg className="w-6 h-6 text-white" viewBox="0 0 24 24" fill="currentColor">
+                <div className="w-14 h-14 bg-[#8b4513] rounded-xl flex items-center justify-center shadow-md mb-4">
+                  <svg className="w-7 h-7 text-white" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2Z" />
                     <path d="M12 14C14.2 14 16 15.8 16 18V20H8V18C8 15.8 9.8 14 12 14Z" />
                   </svg>
                 </div>
-                <h4 className="text-xs text-orange-500 font-medium mb-3">Abtan Creation</h4>
+                <h4 className="text-sm text-orange-500 font-medium mb-3">Abtan Creation</h4>
               </div>
-              <h3 className="text-xl font-bold text-[#1a1a3a] mb-3 leading-tight">
+              <h3 className="text-2xl font-bold text-[#1a1a3a] mb-3 leading-tight">
                 Abtan Creation deals with Design, Tech & People.
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
