@@ -1,30 +1,28 @@
 // src/pages/Index.tsx
 import React from 'react';
-import Header from '../components/Header';
-import HeroSection from '../components/HeroSection';
-import StatsSection from '../components/StatsSection';
-import ExperienceSection from '../components/ExperienceSection';
-import OpportunitiesSection from '../components/OpportunitiesSection';
-import TestimonialsSection from '../components/TestimonialsSection';
-import NetworkSection from '../components/NetworkSection';
-import WhySection from '../components/WhySection';
-import UserTestimonials from '../components/UserTestimonials';
-import CTASection from '../components/CTASection';
-import Footer from '../components/Footer';
+import Header from '../components/home/Header';
+import HeroSection from '../components/home/HeroSection';
+import ExperienceSection from '../components/home/ExperienceSection';
+import OpportunitiesSection from '../components/home/OpportunitiesSection';
+import TestimonialsSection from '../components/home/TestimonialsSection';
+import NetworkSection from '../components/home/NetworkSection';
+import WhySection from '../components/home/WhySection';
+import UserTestimonials from '../components/home/UserTestimonials';
+import CTASection from '../components/home/CTASection';
+import Footer from '../components/home/Footer';
 
 const Index = () => {
   return (
     <div className="min-h-screen">
       <Header />
       <HeroSection />
-      {/* <StatsSection /> */}
       <ExperienceSection />
-      {/* <OpportunitiesSection /> */}
-      {/* <TestimonialsSection /> */}
+      <OpportunitiesSection />
+      {/* <TestimonialsSection / */}
       {/* <NetworkSection /> */}
       {/* <WhySection /> */}
       {/* <UserTestimonials /> */}
-      {/* <CTASection /> */}
+      <CTASection />
       <Footer />
     </div>
   );
