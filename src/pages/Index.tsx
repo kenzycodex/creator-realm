@@ -5,9 +5,6 @@ import HeroSection from '../components/home/HeroSection';
 import ExperienceSection from '../components/home/ExperienceSection';
 import OpportunitiesSection from '../components/home/OpportunitiesSection';
 import BestCreatorsSection from '../components/home/BestCreatorsSection';
-import NetworkSection from '../components/home/NetworkSection';
-import WhySection from '../components/home/WhySection';
-import UserTestimonials from '../components/home/UserTestimonials';
 import CTASection from '../components/home/CTASection';
 import Footer from '../components/home/Footer';
 
@@ -19,9 +16,6 @@ const Index = () => {
       <ExperienceSection />
       <OpportunitiesSection />
       <BestCreatorsSection />
-      {/* <NetworkSection /> */}
-      {/* <WhySection /> */}
-      {/* <UserTestimonials /> */}
       <CTASection />
       <Footer />
     </div>
