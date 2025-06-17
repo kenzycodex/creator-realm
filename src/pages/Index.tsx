@@ -4,7 +4,7 @@ import Header from '../components/home/Header';
 import HeroSection from '../components/home/HeroSection';
 import ExperienceSection from '../components/home/ExperienceSection';
 import OpportunitiesSection from '../components/home/OpportunitiesSection';
-import TestimonialsSection from '../components/home/TestimonialsSection';
+import BestCreatorsSection from '../components/home/BestCreatorsSection';
 import NetworkSection from '../components/home/NetworkSection';
 import WhySection from '../components/home/WhySection';
 import UserTestimonials from '../components/home/UserTestimonials';
@@ -18,7 +18,7 @@ const Index = () => {
       <HeroSection />
       <ExperienceSection />
       <OpportunitiesSection />
-      {/* <TestimonialsSection / */}
+      <BestCreatorsSection />
       {/* <NetworkSection /> */}
       {/* <WhySection /> */}
       {/* <UserTestimonials /> */}
