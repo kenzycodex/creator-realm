@@ -8,12 +8,12 @@ const HeroSection = () => {
           {/* Left Column - Text Content */}
           <div className="space-y-8">
             <div className="space-y-6">
-              <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight">
+              <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-[#2a2a5a] leading-tight">
                 Where African
                 <br />
                 Talent Meets Global
                 <br />
-                <span className="text-blue-600">Opportunity.</span>
+                <span>Opportunity.</span>
               </h1>
               <p className="text-lg text-gray-600 leading-relaxed max-w-lg">
                 Join a thriving community of African freelancers and creators connecting with
@@ -97,18 +97,35 @@ const HeroSection = () => {
                 </span>
               </div>
 
-              <p className="text-sm text-gray-900 mb-4">
-                Several companies are opening vacancies here
-              </p>
-              <div className="flex items-center space-x-4 opacity-60">
-                <div className="w-8 h-8 bg-gray-300 rounded"></div>
-                <div className="w-8 h-8 bg-gray-300 rounded"></div>
-                <div className="w-8 h-8 bg-gray-300 rounded"></div>
-                <div className="w-8 h-8 bg-gray-300 rounded"></div>
-                <div className="w-8 h-8 bg-gray-300 rounded"></div>
-                <div className="w-8 h-8 bg-gray-300 rounded"></div>
-                <div className="w-8 h-8 bg-gray-300 rounded"></div>
-                <div className="w-8 h-8 bg-gray-300 rounded"></div>
+              {/* Company Logos Section */}
+              <div className="space-y-3">
+                <p className="text-sm font-medium text-[#2a2a5a]">Several companies are opening vacancies here</p>
+                <div className="flex items-center space-x-6 opacity-40">
+                  <div className="w-8 h-8 bg-gray-400 rounded flex items-center justify-center">
+                    <span className="text-white font-bold text-xs">G</span>
+                  </div>
+                  <div className="w-8 h-8 bg-gray-400 rounded flex items-center justify-center">
+                    <span className="text-white font-bold text-xs">A</span>
+                  </div>
+                  <div className="w-8 h-8 bg-gray-400 rounded flex items-center justify-center">
+                    <span className="text-white font-bold text-xs">F</span>
+                  </div>
+                  <div className="w-8 h-8 bg-gray-400 rounded flex items-center justify-center">
+                    <span className="text-white font-bold text-xs">M</span>
+                  </div>
+                  <div className="w-8 h-8 bg-gray-400 rounded flex items-center justify-center">
+                    <span className="text-white font-bold text-xs">S</span>
+                  </div>
+                  <div className="w-8 h-8 bg-gray-400 rounded flex items-center justify-center">
+                    <span className="text-white font-bold text-xs">T</span>
+                  </div>
+                  <div className="w-8 h-8 bg-gray-400 rounded flex items-center justify-center">
+                    <span className="text-white font-bold text-xs">N</span>
+                  </div>
+                  <div className="w-8 h-8 bg-gray-400 rounded flex items-center justify-center">
+                    <span className="text-white font-bold text-xs">Z</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -121,7 +138,7 @@ const HeroSection = () => {
                 <img
                   src="/images/office-woman.jpg"
                   alt="African professional working"
-                  className="w-full h-auto object-cover rounded-lg"
+                  className="w-full h-auto object-cover rounded-t-[5.5rem]"
                 />
 
                 {/* Floating Arrow - More stylized curved design */}
@@ -136,18 +153,14 @@ const HeroSection = () => {
               </div>
             </div>
 
-            {/* Stats Cards - Positioned directly under the image */}
+            {/* Stats Cards */}
             <div className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start">
+              
               {/* Jobs Card */}
-              <div className="bg-blue-50 p-6 rounded-2xl text-center min-w-[180px] flex-1 max-w-[220px]">
-                <div className="flex items-center justify-center mb-3">
-                  <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
-                    <svg
-                      className="w-6 h-6 text-white"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
+              <div className="bg-blue-50 p-5 rounded-tr-[3rem] rounded-bl-[3rem] text-center min-w-[150px] max-w-[200px] flex-1">
+                <div className="flex items-center justify-center mb-4">
+                  <div className="w-12 h-12" style={{ backgroundColor: '#2a2a5a', borderRadius: '0.75rem' }}>
+                    <svg className="w-6 h-6 text-white m-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
@@ -157,20 +170,17 @@ const HeroSection = () => {
                     </svg>
                   </div>
                 </div>
-                <div className="text-3xl font-bold text-gray-900 mb-1">25,000+</div>
-                <p className="text-sm text-gray-600">Jobs</p>
+                <p className="text-sm font-medium" style={{ color: '#2a2a5a' }}>Jobs</p>
+                <div className="text-3xl font-bold mt-1" style={{ color: '#2a2a5a' }}>
+                  25,000<span style={{ color: '#4c4c7a' }}>+</span>
+                </div>
               </div>
 
               {/* Currencies Card */}
-              <div className="bg-red-50 p-6 rounded-2xl text-center min-w-[180px] flex-1 max-w-[220px]">
-                <div className="flex items-center justify-center mb-3">
+              <div className="bg-red-50 p-5 rounded-tl-[3rem] rounded-br-[3rem] text-center min-w-[150px] max-w-[200px] flex-1">
+                <div className="flex items-center justify-center mb-4">
                   <div className="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center">
-                    <svg
-                      className="w-6 h-6 text-white"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
+                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
@@ -180,9 +190,12 @@ const HeroSection = () => {
                     </svg>
                   </div>
                 </div>
-                <div className="text-3xl font-bold text-gray-900 mb-1">50+</div>
-                <p className="text-sm text-gray-600">Currencies</p>
+                <p className="text-sm font-medium text-red-600">Currencies</p>
+                <div className="text-3xl font-bold mt-1 text-red-600">
+                  50<span className="text-red-400">+</span>
+                </div>
               </div>
+
             </div>
           </div>
         </div>

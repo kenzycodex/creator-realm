@@ -27,14 +27,14 @@ const Header = () => {
               <a href="#" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">Find job</a>
               <a href="#" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">Find talent</a>
               <a href="#" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">Post job</a>
-              <a href="#" className="text-blue-600 font-medium">Why us</a>
+              <a href="#" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">Why us</a>
               <a href="#" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">Community</a>
               <a href="#" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">More</a>
             </nav>
 
             {/* Desktop Right side */}
             <div className="hidden lg:flex items-center space-x-3">
-              <button className="px-4 xl:px-6 py-2 border-[1px] border-blue-600 text-blue-600 font-medium rounded-lg hover:bg-blue-50 transition-colors">
+              <button className="px-4 xl:px-6 py-2 border border-blue-200 text-blue-600 font-medium rounded-md hover:bg-blue-50 transition-colors">
                 Login
               </button>
               <button className="bg-blue-600 text-white px-4 xl:px-6 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors">
