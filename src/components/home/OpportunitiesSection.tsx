@@ -115,14 +115,14 @@ const OpportunitiesSection = () => {
   };
 
   return (
-    <section className="bg-white py-16 lg:py-20">
+    <section className="bg-white py-12 sm:py-16 lg:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="mb-12">
-          <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-slate-900 mb-4 leading-tight">
+        <div className="mb-8 sm:mb-12">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-[#2a2a5a] mb-3 sm:mb-4 leading-tight">
             Diverse Opportunities Awaits
           </h2>
-          <p className="text-base text-gray-600 max-w-3xl leading-relaxed">
+          <p className="text-sm sm:text-base text-gray-600 max-w-3xl leading-relaxed">
             Our vast array of jobs encompasses developing, UI/UX design, data analysis and much
             more. There's always a new challenge to keep you engaged and ensure your skills remain
             sharp and relevant
@@ -130,22 +130,22 @@ const OpportunitiesSection = () => {
         </div>
 
         {/* Categories Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
           {categories.map((category, index) => (
             <div
               key={index}
-              className="group bg-white border border-gray-200 rounded-xl p-6 hover:shadow-xl hover:border-blue-300 hover:-translate-y-1 transition-all duration-300 ease-out cursor-pointer transform"
+              className="group bg-white border border-gray-200 rounded-lg sm:rounded-xl p-4 sm:p-6 hover:shadow-xl hover:border-blue-300 hover:-translate-y-1 transition-all duration-300 ease-out cursor-pointer transform"
             >
               {/* Icon */}
               <div
-                className={`w-12 h-12 ${category.bgColor} rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 ease-out`}
+                className={`w-10 h-10 sm:w-12 sm:h-12 ${category.bgColor} rounded-lg sm:rounded-xl flex items-center justify-center mb-3 sm:mb-4 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 ease-out`}
               >
                 <div className={category.iconColor}>{getIcon(category.title)}</div>
               </div>
 
               {/* Content */}
               <div className="space-y-1">
-                <h3 className="text-lg font-bold text-gray-900 group-hover:text-blue-600 transition-colors duration-300">
+                <h3 className="text-sm sm:text-lg font-bold text-gray-900 group-hover:text-blue-600 transition-colors duration-300 leading-snug">
                   {category.title}
                 </h3>
                 <p className="text-xs text-gray-500 group-hover:text-gray-600 transition-colors duration-300">
@@ -154,9 +154,9 @@ const OpportunitiesSection = () => {
               </div>
 
               {/* Arrow Icon */}
-              <div className="mt-4 opacity-0 group-hover:opacity-100 transform translate-x-0 group-hover:translate-x-1 transition-all duration-300 ease-out">
+              <div className="mt-3 sm:mt-4 opacity-0 group-hover:opacity-100 transform translate-x-0 group-hover:translate-x-1 transition-all duration-300 ease-out">
                 <svg
-                  className="w-4 h-4 text-gray-400 group-hover:text-blue-600"
+                  className="w-3 h-3 sm:w-4 sm:h-4 text-gray-400 group-hover:text-blue-600"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"

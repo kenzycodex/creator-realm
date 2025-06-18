@@ -54,8 +54,8 @@ const ExperienceSection = () => {
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left Column - Text Content */}
           <div className="space-y-3 sm:space-y-4 text-center lg:text-left">
-            <p className="text-xs sm:text-sm text-gray-700 font-medium">Join Creator Realm Today</p>
-            <h2 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-slate-900 leading-tight">
+            <p className="text-xs sm:text-sm text-[#2a2a5a] font-medium">Join Creator Realm Today</p>
+            <h2 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-[#2a2a5a] leading-tight">
               Experience
               <br />
               With Number
