@@ -50,8 +50,8 @@ const ExperienceSection = () => {
 
   return (
     <section ref={sectionRef} className="bg-blue-50 py-12 sm:py-16 lg:py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
-        <div className="grid lg:grid-cols-2 gap-6 lg:gap-x-8 items-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left Column - Text Content */}
           <div className="space-y-3 sm:space-y-4 text-center lg:text-left">
             <p className="text-xs sm:text-sm text-gray-700 font-medium">Join Creator Realm Today</p>
@@ -63,33 +63,33 @@ const ExperienceSection = () => {
           </div>
 
           {/* Right Column - Stats */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-6 lg:gap-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-6 lg:gap-8">
             {/* First Stat */}
-            <div className="text-center space-y-3 mx-auto lg:mx-0 max-w-[220px] lg:max-w-none lg:min-w-[200px]">
+            <div className="flex flex-col items-center space-y-3">
               <div className="text-4xl sm:text-5xl lg:text-4xl font-bold text-blue-500">
                 {counters.first}%
               </div>
-              <p className="text-sm sm:text-base lg:text-sm text-gray-700 leading-tight">
+              <p className="text-sm sm:text-base lg:text-sm text-gray-700 leading-tight max-w-[200px] text-center">
                 Users find relevant jobs according to skills
               </p>
             </div>
 
             {/* Second Stat with Red Divider */}
-            <div className="relative text-center lg:border-l-2 lg:border-red-500 lg:pl-12 space-y-3 mx-auto lg:mx-0 max-w-[220px] lg:max-w-none lg:min-w-[200px]">
+            <div className="flex flex-col items-center lg:border-l-2 lg:border-red-500 lg:pl-8 space-y-3">
               <div className="text-4xl sm:text-5xl lg:text-4xl font-bold text-blue-500">
                 {counters.second}%
               </div>
-              <p className="text-sm sm:text-base lg:text-sm text-gray-700 leading-tight">
+              <p className="text-sm sm:text-base lg:text-sm text-gray-700 leading-tight max-w-[200px] text-center">
                 Quick data filtering from companies
               </p>
             </div>
 
             {/* Third Stat with Red Divider */}
-            <div className="relative text-center lg:border-l-2 lg:border-red-500 lg:pl-12 space-y-3 mx-auto lg:mx-0 max-w-[220px] lg:max-w-none lg:min-w-[200px] sm:col-span-2 lg:col-span-1">
+            <div className="flex flex-col items-center lg:border-l-2 lg:border-red-500 lg:pl-8 space-y-3 sm:col-span-2 lg:col-span-1 sm:justify-self-center lg:justify-self-start">
               <div className="text-4xl sm:text-5xl lg:text-4xl font-bold text-blue-500">
                 {counters.third}%
               </div>
-              <p className="text-sm sm:text-base lg:text-sm text-gray-700 leading-tight">
+              <p className="text-sm sm:text-base lg:text-sm text-gray-700 leading-tight max-w-[200px] text-center">
                 Top employers connect with users
               </p>
             </div>
