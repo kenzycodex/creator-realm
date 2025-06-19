@@ -138,7 +138,7 @@ const HeroSection = () => {
             <div className="relative">
               <div className="relative">
                 <img
-                  src="/images/office-woman.jpg"
+                  src="/images/smiling-woman.png"
                   alt="African professional working"
                   className="w-full h-auto object-cover rounded-t-[5.5rem]"
                 />
