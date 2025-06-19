@@ -52,128 +52,136 @@ const BestCreatorsSection = () => {
         </div>
 
         {/* Cards Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
           {/* 1. Scribal Pay */}
-          <div className="relative bg-[#e8f4ff] rounded-3xl p-8 h-[400px] border-2 border-[#b3d9ff] overflow-hidden">
-            <div className="absolute top-0 right-0 w-28 h-28 bg-white rounded-bl-[1.5rem]"></div>
-
-            <div className="absolute top-5 right-5">
-              <div className="w-20 h-20 bg-[#2a2a5a] rounded-2xl flex items-center justify-center shadow">
-                <svg
-                  className="w-7 h-7 text-white"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.8"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M7 17L17 7M17 7H7M17 7V17"
-                  />
-                </svg>
+          <div className="relative h-[350px] sm:h-[380px] lg:h-[400px] overflow-hidden">
+            {/* Card Background SVG */}
+            <img 
+              src="/svgs/cards/blue-card.svg" 
+              alt="Card background"
+              className="absolute inset-0 w-full h-full object-cover rounded-2xl sm:rounded-3xl"
+            />
+            
+            {/* Card Content */}
+            <div className="relative z-10 p-4 sm:p-6 lg:p-8 h-full">
+              {/* Arrow Icon - Top Right */}
+              <div className="absolute top-3 right-3 sm:top-4 sm:right-4 lg:top-5 lg:right-5">
+                <img 
+                  src="/svgs/arrow.svg" 
+                  alt="Arrow"
+                  className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16"
+                />
               </div>
-            </div>
 
-            <div className="pr-6">
-              <div className="mb-8">
-                <div className="w-16 h-16 bg-[#1a5cff] rounded-2xl flex items-center justify-center mb-6 shadow-lg">
-                  <svg className="w-8 h-8 text-white" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 2l3.09 8.26L23 12l-7.91 1.74L12 22l-3.09-8.26L1 12l7.91-1.74L12 2z" />
-                  </svg>
+              <div className="pr-4 sm:pr-5 lg:pr-6">
+                <div className="mb-6 sm:mb-7 lg:mb-8">
+                  {/* Company Logo */}
+                  <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 flex items-center justify-center mb-4 sm:mb-5 lg:mb-6">
+                    <img 
+                      src="/svgs/companies/scribal-pay.svg" 
+                      alt="Scribal Pay"
+                      className="w-10 h-10 sm:w-11 sm:h-11 lg:w-12 lg:h-12"
+                    />
+                  </div>
+                  <h4 className="text-xs sm:text-sm text-gray-500 font-medium mb-3 sm:mb-4">Scribal Pay</h4>
                 </div>
-                <h4 className="text-sm text-gray-500 font-medium mb-4">Scribal Pay</h4>
+                <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-[#1a1a3a] mb-3 sm:mb-4 leading-tight">
+                  Scribal Pay is a popular Digital Banking Platform
+                </h3>
+                <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
+                  Scribal Pay is an all-in-one app for sending money, paying bills, buying airtime,
+                  and scheduling payments
+                </p>
               </div>
-              <h3 className="text-2xl font-bold text-[#1a1a3a] mb-4 leading-tight">
-                Scribal Pay is a popular Digital Banking Platform
-              </h3>
-              <p className="text-gray-600 text-sm">
-                Scribal Pay is an all-in-one app for sending money, paying bills, buying airtime,
-                and scheduling payments
-              </p>
             </div>
           </div>
 
           {/* 2. Techstar */}
-          <div className="relative bg-[#fff5f5] rounded-3xl p-8 h-[400px] border-2 border-[#ffcccc] overflow-hidden">
-            <div className="absolute bottom-0 right-0 w-28 h-28 bg-white rounded-tl-[1.5rem]"></div>
-
-            <div className="absolute bottom-5 right-5">
-              <div className="w-20 h-20 bg-[#ef4444] rounded-2xl flex items-center justify-center shadow">
-                <svg
-                  className="w-7 h-7 text-white"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.8"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M7 17L17 7M17 7H7M17 7V17"
-                  />
-                </svg>
+          <div className="relative h-[350px] sm:h-[380px] lg:h-[400px] overflow-hidden">
+            {/* Card Background SVG */}
+            <img 
+              src="/svgs/cards/red-card.svg" 
+              alt="Card background"
+              className="absolute inset-0 w-full h-full object-cover rounded-2xl sm:rounded-3xl"
+            />
+            
+            {/* Card Content */}
+            <div className="relative z-10 p-4 sm:p-6 lg:p-8 h-full">
+              {/* Arrow Icon - Bottom Right */}
+              <div className="absolute bottom-3 right-3 sm:bottom-4 sm:right-4 lg:bottom-5 lg:right-5">
+                <img 
+                  src="/svgs/arrow.svg" 
+                  alt="Arrow"
+                  className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16"
+                />
               </div>
-            </div>
 
-            <div>
-              <div className="mb-6">
-                <div className="w-14 h-14 bg-[#1a5cff] rounded-xl flex items-center justify-center mb-4 shadow-md">
-                  <svg className="w-7 h-7 text-white" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 2l3.09 8.26L23 12l-7.91 1.74L12 22l-3.09-8.26L1 12l7.91-1.74L12 2z" />
-                  </svg>
+              <div className="pb-12 sm:pb-14 lg:pb-16">
+                <div className="mb-4 sm:mb-5 lg:mb-6">
+                  <h4 className="text-xs sm:text-sm text-red-500 font-medium mb-2 sm:mb-3">Teens Center for intelligence</h4>
                 </div>
-                <h4 className="text-sm text-red-500 font-medium mb-3">Scribal Pay</h4>
+                <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-[#1a1a3a] mb-2 sm:mb-3 leading-tight">
+                  Teens Center is an innovative teens corner
+                </h3>
+                <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
+                  Teens center is a major player in shaping how teenagers across information, communicate and consume 
+                  entertainment.
+                </p>
+                
+                {/* Company Logo - Bottom */}
+                <div className="absolute bottom-16 left-4 sm:bottom-18 sm:left-6 lg:bottom-24 lg:left-8">
+                  <div className="w-16 h-16 sm:w-18 sm:h-18 lg:w-20 lg:h-20 flex items-center justify-center">
+                    <img 
+                      src="/svgs/companies/techstar.svg" 
+                      alt="Techstar"
+                      className="w-16 h-16 sm:w-18 sm:h-18 lg:w-20 lg:h-20"
+                    />
+                  </div>
+                </div>
               </div>
-              <h3 className="text-2xl font-bold text-[#1a1a3a] mb-3 leading-tight">
-                Techstar is a Tech Giant
-              </h3>
-              <p className="text-gray-600 text-sm">
-                Google is a major player in the tech industry, shaping how people access
-                information, communicate and consume entertainment.
-              </p>
             </div>
           </div>
 
           {/* 3. Abtan Creation */}
-          <div className="relative bg-[#fffbf0] rounded-3xl p-8 h-[400px] border-2 border-[#ffe4b3] overflow-hidden">
-            <div className="absolute top-0 right-0 w-28 h-28 bg-white rounded-bl-[1.5rem]"></div>
-
-            <div className="absolute top-5 right-5">
-              <div className="w-20 h-20 bg-[#f97316] rounded-2xl flex items-center justify-center shadow">
-                <svg
-                  className="w-7 h-7 text-white"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.8"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M7 17L17 7M17 7H7M17 7V17"
-                  />
-                </svg>
+          <div className="relative h-[350px] sm:h-[380px] lg:h-[400px] overflow-hidden md:col-span-2 lg:col-span-1">
+            {/* Card Background SVG */}
+            <img 
+              src="/svgs/cards/orange-card.svg" 
+              alt="Card background"
+              className="absolute inset-0 w-full h-full object-cover rounded-2xl sm:rounded-3xl"
+            />
+            
+            {/* Card Content */}
+            <div className="relative z-10 p-4 sm:p-6 lg:p-8 h-full">
+              {/* Arrow Icon - Top Right */}
+              <div className="absolute top-3 right-3 sm:top-4 sm:right-4 lg:top-5 lg:right-5">
+                <img 
+                  src="/svgs/arrow.svg" 
+                  alt="Arrow"
+                  className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16"
+                />
               </div>
-            </div>
 
-            <div className="pr-6">
-              <div className="mb-6">
-                <div className="w-14 h-14 bg-[#8b4513] rounded-xl flex items-center justify-center mb-4 shadow-md">
-                  <svg className="w-7 h-7 text-white" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2Z" />
-                    <path d="M12 14C14.2 14 16 15.8 16 18V20H8V18C8 15.8 9.8 14 12 14Z" />
-                  </svg>
+              <div className="pr-4 sm:pr-5 lg:pr-6">
+                <div className="mb-4 sm:mb-5 lg:mb-6">
+                  {/* Company Logo */}
+                  <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 flex items-center justify-center mb-3 sm:mb-4">
+                    <img 
+                      src="/svgs/companies/abtan-creation.svg" 
+                      alt="Abtan Creation"
+                      className="w-9 h-9 sm:w-10 sm:h-10 lg:w-12 lg:h-12"
+                    />
+                  </div>
+                  <h4 className="text-xs sm:text-sm text-orange-500 font-medium mb-2 sm:mb-3">Abtan Creation</h4>
                 </div>
-                <h4 className="text-sm text-orange-500 font-medium mb-3">Abtan Creation</h4>
+                <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-[#1a1a3a] mb-2 sm:mb-3 leading-tight">
+                  Abtan Creation deals with Design, Tech & People.
+                </h3>
+                <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
+                  Overall, Abtan Creation is a tech Company that deals with Digital design, Gadgets
+                  for techies and also people.
+                </p>
               </div>
-              <h3 className="text-2xl font-bold text-[#1a1a3a] mb-3 leading-tight">
-                Abtan Creation deals with Design, Tech & People.
-              </h3>
-              <p className="text-gray-600 text-sm">
-                Overall, Abtan Creation is a tech Company that deals with Digital design, Gadgets
-                for techies and also people.
-              </p>
             </div>
           </div>
         </div>
