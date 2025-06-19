@@ -23,38 +23,37 @@ const CTASection = () => {
           {/* Right Side - Cards and Form */}
           <div className="space-y-8">
             {/* Floating Job Cards */}
-            <div className="relative h-36 lg:h-32 flex justify-center lg:justify-start">
+            <div className="relative h-52 sm:h-48 lg:h-32 flex justify-center lg:justify-start">
               {/* Card 1 - Abtan Creation */}
-              <div className="absolute top-0 left-2 lg:left-0 bg-[#fff9e6] shadow-lg rounded-xl p-5 w-[250px] lg:w-[280px] transform rotate-[-8deg] hover:rotate-[-4deg] transition-transform duration-300 z-10">
-                <p className="text-xs text-[#6b4cff] font-medium mb-3">Abtan Creation</p>
-                <div className="flex items-center gap-3">
-                  <div className="w-8 h-8 bg-[#8b4513] rounded-lg flex items-center justify-center">
-                    <svg className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2Z" />
-                      <path d="M12 14C14.2 14 16 15.8 16 18V20H8V18C8 15.8 9.8 14 12 14Z" />
-                      <path d="M12 8C14.2 8 16 9.8 16 12S14.2 16 12 16S8 14.2 8 12S9.8 8 12 8Z" />
-                    </svg>
+              <div className="absolute top-0 left-1/2 transform -translate-x-1/2 sm:left-4 sm:translate-x-0 lg:left-0 bg-[#fff9e6] shadow-lg rounded-xl p-4 sm:p-5 w-[280px] sm:w-[300px] lg:w-[280px] rotate-[-12deg] sm:rotate-[-8deg] hover:rotate-[-6deg] sm:hover:rotate-[-4deg] transition-transform duration-300 z-10">
+                <div className="flex items-start gap-3">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center flex-shrink-0">
+                    <img 
+                      src="/svgs/companies/abtan-creation.svg" 
+                      alt="Abtan Creation"
+                      className="w-10 h-10 sm:w-12 sm:h-12"
+                    />
                   </div>
-                  <div>
-                    <p className="text-sm font-bold text-[#1a1a3a]">Senior UI/UX</p>
-                    <p className="text-sm font-bold text-[#1a1a3a]">Designer</p>
+                  <div className="flex-1">
+                    <p className="text-xs text-[#6b4cff] font-medium mb-2">Abtan Creation</p>
+                    <p className="text-sm font-bold text-[#2a2a5a]">Senior UI/UX Designer</p>
                   </div>
                 </div>
               </div>
 
               {/* Card 2 - Scribal Pay */}
-              <div className="absolute top-4 right-2 lg:left-[320px] lg:top-6 bg-white shadow-lg rounded-xl p-5 w-[250px] lg:w-[280px] transform rotate-[8deg] hover:rotate-[4deg] transition-transform duration-300 z-20">
-                <p className="text-xs text-[#6b4cff] font-medium mb-3">Scribal Pay</p>
-                <div className="flex items-center gap-3">
-                  <div className="w-8 h-8 bg-[#1a1a3a] rounded-lg flex items-center justify-center">
-                    <svg className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M3 5V19H21V5H3ZM19 17H5V7H19V17Z" />
-                      <path d="M7 9H17V11H7V9Z" />
-                      <path d="M7 13H15V15H7V13Z" />
-                    </svg>
+              <div className="absolute top-24 left-1/2 transform -translate-x-1/2 sm:top-20 sm:right-4 sm:left-auto sm:translate-x-0 lg:left-[320px] lg:top-6 bg-white shadow-lg rounded-xl p-4 sm:p-5 w-[280px] sm:w-[300px] lg:w-[280px] rotate-[12deg] sm:rotate-[8deg] hover:rotate-[6deg] sm:hover:rotate-[4deg] transition-transform duration-300 z-20">
+                <div className="flex items-start gap-3">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center flex-shrink-0">
+                    <img 
+                      src="/svgs/companies/scribal-pay.svg" 
+                      alt="Scribal Pay"
+                      className="w-10 h-10 sm:w-12 sm:h-12"
+                    />
                   </div>
-                  <div>
-                    <p className="text-sm font-bold text-[#1a1a3a]">Financial Analyst</p>
+                  <div className="flex-1">
+                    <p className="text-xs text-[#6b4cff] font-medium mb-2">Scribal Pay</p>
+                    <p className="text-sm font-bold text-[#2a2a5a]">Financial Analyst</p>
                   </div>
                 </div>
               </div>
