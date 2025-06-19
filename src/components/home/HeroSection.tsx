@@ -1,5 +1,5 @@
 import React from 'react';
-import { Search, Briefcase, Globe, Chrome, Smartphone, Monitor, Tv, Film } from 'lucide-react';
+import { Search } from 'lucide-react';
 
 const HeroSection = () => {
   return (
@@ -68,7 +68,6 @@ const HeroSection = () => {
                 <div className="w-24 h-16 mb-6">
                   <img
                     src="/svgs/blue-line.svg"
-                    alt="Testimonial"
                     className="w-full h-full object-contain"
                   />
                 </div>
@@ -105,31 +104,31 @@ const HeroSection = () => {
                 <p className="text-base font-bold text-[#2a2a5a]">Several companies are opening vacancies here</p>
                 <div className="flex items-center space-x-4">
                   {/* Google */}
-                  <Chrome className="w-6 h-6 text-gray-400" />
+                  <img src="/svgs/company/google.svg" alt="Google" className="w-6 h-6 opacity-60" />
                   
                   {/* Apple */}
-                  <Smartphone className="w-6 h-6 text-gray-400" />
+                  <img src="/svgs/company/apple.svg" alt="Apple" className="w-6 h-6 opacity-60" />
 
-                  {/* Microsoft */}
-                  <Monitor className="w-6 h-6 text-gray-400" />
+                  {/* Figma */}
+                  <img src="/svgs/company/figma.svg" alt="Figma" className="w-6 h-6 opacity-60" />
 
-                  {/* Meta */}
-                  <Globe className="w-6 h-6 text-gray-400" />
-
-                  {/* Amazon */}
-                  <Briefcase className="w-6 h-6 text-gray-400" />
-
-                  {/* Netflix */}
-                  <Tv className="w-6 h-6 text-gray-400" />
-
-                  {/* Additional icons */}
-                  <Film className="w-6 h-6 text-gray-400" />
-                  
-                  {/* Slack */}
-                  <Monitor className="w-6 h-6 text-gray-400" />
+                  {/* Windows */}
+                  <img src="/svgs/company/windows.svg" alt="Windows" className="w-6 h-6 opacity-60" />
 
                   {/* Spotify */}
-                  <Globe className="w-6 h-6 text-gray-400" />
+                  <img src="/svgs/company/spotify.svg" alt="Spotify" className="w-6 h-6 opacity-60" />
+
+                  {/* Twitch */}
+                  <img src="/svgs/company/twitch.svg" alt="Twitch" className="w-6 h-6 opacity-60" />
+                  
+                  {/* Zoom */}
+                  <img src="/svgs/company/zoom.svg" alt="Zoom" className="w-6 h-6 opacity-60" />
+
+                  {/* Dribble */}
+                  <img src="/svgs/company/dribbble.svg" alt="Dribbble" className="w-6 h-6 opacity-60" />
+
+                  {/* Messenger */}
+                  <img src="/svgs/company/messenger.svg" alt="Messenger" className="w-6 h-6 opacity-60" />
                 </div>
               </div>
             </div>
@@ -154,9 +153,7 @@ const HeroSection = () => {
               {/* Jobs Card */}
               <div className="bg-blue-50 p-5 py-12 rounded-tr-[3rem] rounded-bl-[3rem] text-center flex-1">
                 <div className="flex items-center justify-center mb-4">
-                  <div className="w-12 h-12" style={{ backgroundColor: '#2a2a5a', borderRadius: '0.75rem' }}>
-                    <Briefcase className="w-6 h-6 text-white m-auto mt-3" />
-                  </div>
+                  <img src="/svgs/briefcase.svg" alt="Jobs" className="w-14 h-14" />
                 </div>
                 <p className="text-sm font-medium" style={{ color: '#2a2a5a' }}>Jobs</p>
                 <div className="text-3xl font-bold mt-1" style={{ color: '#2a2a5a' }}>
@@ -167,9 +164,7 @@ const HeroSection = () => {
               {/* Currencies Card */}
               <div className="bg-red-50 p-5 py-12 rounded-tl-[3rem] rounded-br-[3rem] text-center flex-1">
                 <div className="flex items-center justify-center mb-4">
-                  <div className="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center">
-                    <Globe className="w-6 h-6 text-white" />
-                  </div>
+                  <img src="/svgs/global.svg" alt="Currencies" className="w-14 h-14" />
                 </div>
                 <p className="text-sm font-medium text-red-600">Currencies</p>
                 <div className="text-3xl font-bold mt-1 text-red-600">
