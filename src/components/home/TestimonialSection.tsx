@@ -11,7 +11,7 @@ const TestimonialSection = () => {
       role: 'UI/UX Designer',
       quote:
         'I was using several job boards and getting overwhelmed, at Creator Realm, it saved me tons of time and I landed my dream job at a great company.',
-      image: '/api/placeholder/300/300',
+      image: '/images/testimonials/atanda.png',
     },
     {
       id: 2,
